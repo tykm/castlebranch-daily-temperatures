@@ -32,4 +32,8 @@ WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//butt
 dismiss_button = driver.find_element_by_xpath("//button[@class='button mx-2 unstyled-button']")
 dismiss_button.click()
 
-time.sleep(5)
+# Locate and press launch CB Bridges button
+cb_bridges_button = driver.find_element_by_xpath("//button[@class='button mx-auto my-4 w-32 blue-button']")
+cb_bridges_button.click()
+
+time.sleep(1800)

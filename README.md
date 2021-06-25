@@ -5,3 +5,10 @@ selenium
 chromedriver
 python-dotenv
 .env file with username and pw
+os
+time
+
+Resources:
+Controlling the web with python - https://towardsdatascience.com/controlling-the-web-with-python-6fceb22c5f08
+Locating elements with selenium - https://selenium-python.readthedocs.io/locating-elements.html
+Explicit wait - https://www.selenium.dev/documentation/en/webdriver/waits/

@@ -51,7 +51,7 @@ temperature_box = driver.find_element_by_id('temperature-reading')
 submit_button = driver.find_element_by_xpath("//button[@class='temperature-submit bg-cb-blue text-white px-8 py-2 border rounded-lg bg-blue-light cursor-not-allowed']")
 
 # Fill in temperature box with randomized temperature within acceptable range
-temperature_box.send_keys("98.3")
+temperature_box.send_keys(str(round(random.uniform(98.0, 98.8), 1)))
 
 # Locate and fill in radio yes/no question buttons
 radio_symptoms = driver.find_element_by_xpath("//input[@id='radio-symptoms-5270021258413603424']")
@@ -69,4 +69,4 @@ WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//butt
 # Submit form
 #submit_button.click()
 
-time.sleep(1800)
+time.sleep(2)

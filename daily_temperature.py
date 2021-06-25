@@ -1,4 +1,5 @@
 from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
 from dotenv import load_dotenv
 import os
 import time
@@ -24,4 +25,11 @@ password_box.send_keys(os.getenv('CB_PASSWORD'))
 # Press login button
 login_button.click()
 
-time.sleep(10)
+# Wait for login page to load
+WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//button[1]"))
+
+# Locate and press dismiss button
+dismiss_button = driver.find_element_by_xpath("//button[@class='button mx-2 unstyled-button']")
+dismiss_button.click()
+
+time.sleep(5)

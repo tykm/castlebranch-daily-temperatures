@@ -44,7 +44,7 @@ WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//a[@c
 driver.get('https://cbbridges.com/#wellness-center')
 
 # Wait for wellness center page to load
-WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_id('temperature-reading'))
+WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//input[@value='5270021258413603424']"))
 
 # Locate temperature and submit buttons
 temperature_box = driver.find_element_by_id('temperature-reading')
@@ -53,10 +53,20 @@ submit_button = driver.find_element_by_xpath("//button[@class='temperature-submi
 # Fill in temperature box with randomized temperature within acceptable range
 temperature_box.send_keys("98.3")
 
-# Fill in radio yes/no question buttons
+# Locate and fill in radio yes/no question buttons
+radio_symptoms = driver.find_element_by_xpath("//input[@id='radio-symptoms-5270021258413603424']")
+radio_contact_symptoms = driver.find_element_by_xpath("//input[@id='radio-contact.symptoms-5270021258413603424']")
+radio_contact_exposed = driver.find_element_by_xpath("//input[@id='radio-contact.exposed-5270021258413603424']")
+radio_travel = driver.find_element_by_xpath("//input[@id='radio-travel-5270021258413603424']")
+radio_symptoms.click()
+radio_contact_symptoms.click()
+radio_contact_exposed.click()
+radio_travel.click()
 
+# Wait until radio buttons clicked
+WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//button[@class='temperature-submit bg-cb-blue text-white px-8 py-2 border rounded-lg']"))
 
-# Submit temperature
+# Submit form
 #submit_button.click()
 
 time.sleep(1800)

@@ -7,6 +7,7 @@ python-dotenv
 .env file with username and pw
 os
 time
+random
 
 Resources:
 Controlling the web with python - https://towardsdatascience.com/controlling-the-web-with-python-6fceb22c5f08

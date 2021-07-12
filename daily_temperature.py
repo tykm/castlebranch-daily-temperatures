@@ -67,6 +67,6 @@ radio_travel.click()
 WebDriverWait(driver, timeout=3).until(lambda d: d.find_element_by_xpath("//button[@class='temperature-submit bg-cb-blue text-white px-8 py-2 border rounded-lg']"))
 
 # Submit form
-#submit_button.click()
+submit_button.click()
 
 time.sleep(2)

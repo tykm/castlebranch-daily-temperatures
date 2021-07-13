@@ -1,3 +1,5 @@
+Currently broken due to wellness center changes
+
 This is my script to automate my daily temperature check-in at CastleBranch.
 
 Requirements:  

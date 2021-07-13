@@ -9,7 +9,7 @@ import random
 load_dotenv()
 
 # Uses Chrome web driver to access web
-driver = webdriver.Chrome('C:/Users/tyler/AppData/Roaming/Python/Python39/Scripts/chromedriver.exe')
+driver = webdriver.Chrome()
 
 # Open the login website
 driver.get('https://login.castlebranch.com/login')

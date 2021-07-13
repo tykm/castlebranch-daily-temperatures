@@ -1,4 +1,4 @@
-This is my script to automate my 2x per day temperature check-in at CastleBranch.
+This is my script to automate my daily temperature check-in at CastleBranch.
 
 Requirements:  
 pip  

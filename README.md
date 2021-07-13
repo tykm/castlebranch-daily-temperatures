@@ -1,6 +1,6 @@
 This is my script to automate my 2x per day temperature check-in at CastleBranch.
 
-Requirements:
+Requirements:  
 pip  
 `https://pip.pypa.io/en/stable/installing/`  
 selenium  

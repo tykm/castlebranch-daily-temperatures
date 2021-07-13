@@ -1,14 +1,14 @@
 This is my script to automate my 2x per day temperature check-in at CastleBranch.
 
 Requirements:
-pip
-`https://pip.pypa.io/en/stable/installing/`
-selenium
-`pip install -U selenium`
-chromedriver
-`https://chromedriver.chromium.org/downloads`
-python-dotenv
-`pip install python-dotenv`
+pip  
+`https://pip.pypa.io/en/stable/installing/`  
+selenium  
+`pip install -U selenium`  
+chromedriver  
+`https://chromedriver.chromium.org/downloads`  
+python-dotenv  
+`pip install python-dotenv`  
 
 Setup:
 1. Create a .env file following the .env.example format
